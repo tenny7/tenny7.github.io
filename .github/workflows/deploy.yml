@@ -5,6 +5,7 @@ on:
    
 jobs:
  build:
+  name: build
   runs-on: ubuntu-latest
   steps:
     - name: Checkout
@@ -26,7 +27,8 @@ jobs:
         # This is the branch you wish to deploy to, for example gh-pages
         branch: gh-pages
         # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
-        folder: folds/myfolder 
+        folder: build
+        target_folder: .
       
         
         
